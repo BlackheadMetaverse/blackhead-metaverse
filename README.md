@@ -4,8 +4,7 @@ Welcome to my personal portfolio page! This site is a comprehensive showcase of 
 
 ## About Me
 
-I am a passionate developer and designer with a keen interest in creating impactful digital experiences. With a background in both front-end and back-end development, I strive to build seamless, user-friendly applications. My journey in the tech industry has equipped me with a diverse skill set, ranging from web development to graphic design.
-
+I am a passionate developer and designer with a keen interest in creating impactful digital experiences. With a background in both front-end and back-end development, I strive to build seamless, user-friendly applications.
 ## Projects
 
 Here, you'll find a curated selection of my projects, each highlighting a unique set of skills and challenges. From innovative web applications to dynamic websites, each project showcases my ability to blend functionality with aesthetics.
