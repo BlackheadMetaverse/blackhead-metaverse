@@ -9,6 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     padding-left: 50px;
+    background-color:darkgray ;
    
 }
 
@@ -65,9 +66,10 @@ a {
 }
 
 a:hover {
-    background-color: black;
-    color: white;
+    background-color: #f5f5f5;
+    color: black;
     border-radius: 10%;
+    padding: 5px;
 
 }
 
