@@ -303,3 +303,14 @@ function pick(guess) {
     }
   }
 }
+
+let easterEggActivated = false;
+
+function easterEgg() {
+  if (!easterEggActivated) {
+    update(locations[7]);
+    easterEggActivated = true;
+  } else {
+    console.log("Das Easter Egg wurde bereits aktiviert.");
+  }
+}
