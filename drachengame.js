@@ -92,6 +92,12 @@ const locations = [
     "button text": ["2", "8", "Zurück zum Ortsschild?"],
     "button functions": [pickTwo, pickEight, goTown],
     text: "Du findest ein EasterEgg. Wähle eine der obigen Nummern. Zehn random Nummern von 0 bis 15 werden ausgewählt. Falls deine Nummer dabei ist, gewinnst du!"
+  },
+  {
+    name: "store-fight",
+    "button text": ["Kampf starten", "Davonrennen", "Davonrennen"],
+    "button functions": [fightDragon, goTown, goTown],
+    text: "Du bist dabei den Rewe zu betreten. Leider fährt der Drache hinter dir mit seinem roten Audi A4 vor, lässt die Scheibe herunter und sammelt schon Speichel, um dir ins Gesicht zu spucken.",
   }
 ];
 
@@ -119,9 +125,7 @@ function goStore() {
   if (Math.random() < 0.66) {
     update(locations[1]);
   } else {
-    text.innerText = "Du betrittst den Laden. Leider fährt der Drache hinter dir mit seinem roten Audi A4 vor, lässt die Scheibe herunter und sammelt schon Speichel, um dir ins Gesicht zu spucken.";
-    fighting = 2;
-    goFight();
+    update(locations[8]);
   }
 }
 
