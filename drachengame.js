@@ -92,14 +92,7 @@ const locations = [
     "button text": ["2", "8", "Zurück zum Ortsschild?"],
     "button functions": [pickTwo, pickEight, goTown],
     text: "Du findest ein EasterEgg. Wähle eine der obigen Nummern. Zehn random Nummern von 0 bis 15 werden ausgewählt. Falls deine Nummer dabei ist, gewinnst du!"
-  },
-  {
-    name: "store-fight",
-    "button text": ["Angreifen", "Ausweichen", "Davonrennen"],
-    "button functions": [attack, dodge, goTown],
-    text:  /* Couterpart = locations[8] */
   }
-
 ];
 
 // initialize buttons
@@ -126,9 +119,8 @@ function goStore() {
   if (Math.random() < 0.66) {
     update(locations[1]);
   } else {
-    update(locations[8])
+    text.innerText = "Du betrittst den Laden. Leider fährt der Drache hinter dir mit seinem roten Audi A4 vor, lässt die Scheibe herunter und sammelt schon Speichel, um dir ins Gesicht zu spucken.";
     fightDragon();
-    text.innerText = "Du betrittst den Laden. Leider fährt der Drache hinter dir mit seinem roten Audi A4 vor, lässt die Scheibe herunter und sammelt schon Speichel, um dir ins Gesicht spucken."
   }
 }
 
@@ -148,8 +140,6 @@ function buyHealth() {
     
   }
 }
-
-
 function buyWeapon() {
   if (currentWeapon < weapons.length - 1) {
     if (gold >= 30) {
