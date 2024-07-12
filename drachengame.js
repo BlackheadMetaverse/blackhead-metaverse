@@ -120,7 +120,8 @@ function goStore() {
     update(locations[1]);
   } else {
     text.innerText = "Du betrittst den Laden. Leider fährt der Drache hinter dir mit seinem roten Audi A4 vor, lässt die Scheibe herunter und sammelt schon Speichel, um dir ins Gesicht zu spucken.";
-    fightDragon();
+    fighting = 2;
+    goFight();
   }
 }
 
